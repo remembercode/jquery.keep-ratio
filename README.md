@@ -1,3 +1,6 @@
+# fork from https://github.com/loonkwil/jquery.keep-ratio
+
+
 # Keep Ratio
 
 [![Build Status](https://travis-ci.org/loonkwil/jquery.keep-ratio.png)](https://travis-ci.org/loonkwil/jquery.keep-ratio)
@@ -30,7 +33,10 @@ bower install keep-ratio --save
   <script type="text/javascript">
     $(function() {
       $('div').keepRatio({ ratio: 4/3, calculate: 'width' });
+      // add mode scale parent
       $('div').keepRatio({ ratio: 16/9, calculate: 'parent' });
+      // add mode center to auto center dom element in parent dom, this dom must position:absolute float:left,and parent must position:relative
+      $('div').keepRatio({ ratio: 16/9, calculate: 'center' });
     });
   </script>
 </body>
