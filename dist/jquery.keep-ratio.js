@@ -45,6 +45,30 @@
 					$el.width(width);
 				}
 			};
+		} else if (options.calculate === 'center') {
+			var width = $el.parent().width();
+			var height = $el.parent().height();
+			resizeFunction = function () {
+				if ((height * options.ratio) < width) {
+					$el.height(height);
+					var newW = Math.round(height * options.ratio);
+					if (Math.abs(newW - width) <= 5) {
+						newW = width;
+					}
+					$el.width(newW);
+					$el.css("top", "0px");
+					$el.css("left", (Math.abs(newW - width) / 2) + "px");
+				} else {
+					var newH = Math.round(width / options.ratio);
+					if (Math.abs(newH - height) <= 5) {
+						newH = height;
+					}
+					$el.height(newH);
+					$el.width(width);
+					$el.css("top", (Math.abs(newH - height) / 2) + "px");
+					$el.css("left", "0px");
+				}
+			};
 		} else if (options.calculate === 'height') {
 			var width = $el.width();
 			resizeFunction = function () {
