@@ -30,6 +30,7 @@ bower install keep-ratio --save
   <script type="text/javascript">
     $(function() {
       $('div').keepRatio({ ratio: 4/3, calculate: 'width' });
+      $('div').keepRatio({ ratio: 16/9, calculate: 'parent' });
     });
   </script>
 </body>
