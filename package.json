@@ -1,25 +1,49 @@
 {
-  "name": "jquery.keep-ratio",
-  "description": "A jQuery plugin for keeping the aspect ratio",
-  "version": "0.1.2",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/remembercode/jquery.keep-ratio.git"
+  "_args": [
+    [
+      "jquery.keep-ratio",
+      "D:\\Heren\\Works\\301.新门诊楼病案管理科.窗口叫号程序"
+    ]
+  ],
+  "_from": "jquery.keep-ratio",
+  "_id": "jquery.keep-ratio@0.1.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/jquery.keep-ratio",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": null,
+    "raw": "jquery.keep-ratio",
+    "rawSpec": "jquery.keep-ratio",
+    "scope": null,
+    "spec": "D:\\Heren\\Works\\301.新门诊楼病案管理科.窗口叫号程序\\jquery.keep-ratio",
+    "type": "directory"
   },
-  "engines": {
-    "node": ">= 0.10.0"
-  },
-  "scripts": {
-    "test": "gulp test"
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:jquery.keep-ratio",
+  "_shasum": "72199c71bd87d935183096d8da5718565f080258",
+  "_shrinkwrap": null,
+  "_spec": "jquery.keep-ratio",
+  "_where": "D:\\Heren\\Works\\301.新门诊楼病案管理科.窗口叫号程序",
+  "author": {
+    "name": "loonkwil , forked by:WangBing"
   },
   "bugs": {
     "url": "https://github.com/remembercode/jquery.keep-ratio/issues"
   },
-  "homepage": "https://github.com/remembercode/jquery.keep-ratio#readme",
-  "main": "dist/jquery.keep-ratio.js",
+  "dependencies": {},
+  "description": "A jQuery plugin for keeping the aspect ratio",
+  "devDependencies": {},
   "directories": {
     "test": "test"
   },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "gitHead": "c108e436b05d7c0a90aa46c7b4f7bc9b6be88522",
+  "homepage": "https://github.com/remembercode/jquery.keep-ratio#readme",
   "keywords": [
     "jquery",
     "keep",
@@ -27,6 +51,18 @@
     "ratio",
     "nw.js"
   ],
-  "author": "loonkwil , forked by:WangBing",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "dist/jquery.keep-ratio.js",
+  "name": "jquery.keep-ratio",
+  "optionalDependencies": {},
+  "readme": "# fork from https://github.com/loonkwil/jquery.keep-ratio\n\n\n# Keep Ratio\n\n[![Build Status](https://travis-ci.org/loonkwil/jquery.keep-ratio.png)](https://travis-ci.org/loonkwil/jquery.keep-ratio)\n\nA jQuery plugin for keeping the aspect ratio\n\nExample usage: http://loonkwil.github.io/jquery.keep-ratio/\n\n## Install\n\nRequirements [Bower](https://github.com/bower/bower)\n\n```bash\nbower install keep-ratio --save\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n</head>\n<body>\n  <div></div>\n\n  <script src=\"bower_components/jquery/dist/jquery.min.js\"></script>\n  <!-- For older browsers (http://caniuse.com/#feat=requestanimationframe) -->\n  <script src=\"bower_components/request-animation-frame/rAF.js\"></script>\n  <script src=\"bower_components/keep-ratio/dist/jquery.keep-ratio.min.js\"></script>\n  <script type=\"text/javascript\">\n    $(function() {\n      $('div').keepRatio({ ratio: 4/3, calculate: 'width' });\n      // add mode scale parent\n      $('div').keepRatio({ ratio: 16/9, calculate: 'parent' });\n      // add mode center to auto center dom element in parent dom, this dom must position:absolute float:left,and parent must position:relative\n      $('div').keepRatio({ ratio: 16/9, calculate: 'center' });\n    });\n  </script>\n</body>\n```\n\n## How to make your own build\n\nRequirements: [NodeJs](http://nodejs.org), [Bower](http://bower.io),\n[Gulp](http://gulpjs.com)\n\n 1. `bower install`\n 2. `npm install`\n 3. `npm test`\n 4. `gulp dist` or just `gulp`\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/remembercode/jquery.keep-ratio.git"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "version": "0.1.2"
 }
